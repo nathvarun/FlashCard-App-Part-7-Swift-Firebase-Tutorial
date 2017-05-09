@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341E587909328C86D2F9968D /* Pods_Infinte_PageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5F3ABFCF104DE2B0B3070 /* Pods_Infinte_PageViewController.framework */; };
+		7A2457CF1EB041CF0077F5DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2457CE1EB041CF0077F5DF /* LoginViewController.swift */; };
+		7A3BCD861EB203D300865A82 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3BCD851EB203D300865A82 /* FBSDKLoginKit.framework */; };
+		7A3BCD881EB203DB00865A82 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3BCD871EB203DB00865A82 /* FBSDKCoreKit.framework */; };
+		7A430C1D1EC0CE5C00F39011 /* SubjectsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A430C1C1EC0CE5C00F39011 /* SubjectsCollectionViewCell.swift */; };
+		7A54DC6E1EA5FFC800350EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54DC6D1EA5FFC800350EED /* AppDelegate.swift */; };
+		7A54DC731EA5FFC800350EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A54DC711EA5FFC800350EED /* Main.storyboard */; };
+		7A54DC751EA5FFC800350EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A54DC741EA5FFC800350EED /* Assets.xcassets */; };
+		7A54DC781EA5FFC800350EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A54DC761EA5FFC800350EED /* LaunchScreen.storyboard */; };
+		7A54DC801EA6001400350EED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54DC7F1EA6001400350EED /* BaseViewController.swift */; };
+		7A54DC821EA6025A00350EED /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54DC811EA6025A00350EED /* PageViewController.swift */; };
+		7AE75E691EB70AC200E77563 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE75E681EB70AC200E77563 /* SubjectsViewController.swift */; };
+		7AF32CDF1EAE1E7800BA6080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AF32CDE1EAE1E7800BA6080 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55E5F3ABFCF104DE2B0B3070 /* Pods_Infinte_PageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinte_PageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A2457CE1EB041CF0077F5DF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A3BCD851EB203D300865A82 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7A3BCD871EB203DB00865A82 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7A430C1C1EC0CE5C00F39011 /* SubjectsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A54DC6A1EA5FFC800350EED /* Infinte PageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinte PageViewController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A54DC6D1EA5FFC800350EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A54DC721EA5FFC800350EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A54DC741EA5FFC800350EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A54DC771EA5FFC800350EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A54DC791EA5FFC800350EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A54DC7F1EA6001400350EED /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7A54DC811EA6025A00350EED /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		7AE75E681EB70AC200E77563 /* SubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
+		7AF32CDE1EAE1E7800BA6080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D064FE32A17E0A04B404D079 /* Pods-Infinte PageViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinte PageViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinte PageViewController/Pods-Infinte PageViewController.release.xcconfig"; sourceTree = "<group>"; };
+		FF02625A80F828258C941D65 /* Pods-Infinte PageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinte PageViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinte PageViewController/Pods-Infinte PageViewController.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A54DC671EA5FFC800350EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3BCD881EB203DB00865A82 /* FBSDKCoreKit.framework in Frameworks */,
+				341E587909328C86D2F9968D /* Pods_Infinte_PageViewController.framework in Frameworks */,
+				7A3BCD861EB203D300865A82 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C4C248487C6B4BCAC66B57C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BCD851EB203D300865A82 /* FBSDKLoginKit.framework */,
+				7A3BCD871EB203DB00865A82 /* FBSDKCoreKit.framework */,
+				55E5F3ABFCF104DE2B0B3070 /* Pods_Infinte_PageViewController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A54DC611EA5FFC700350EED = {
+			isa = PBXGroup;
+			children = (
+				7A54DC6C1EA5FFC800350EED /* Infinte PageViewController */,
+				7A54DC6B1EA5FFC800350EED /* Products */,
+				C6C74781C58B599AA3B43225 /* Pods */,
+				5C4C248487C6B4BCAC66B57C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A54DC6B1EA5FFC800350EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A54DC6A1EA5FFC800350EED /* Infinte PageViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A54DC6C1EA5FFC800350EED /* Infinte PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7A54DC6D1EA5FFC800350EED /* AppDelegate.swift */,
+				7A54DC7F1EA6001400350EED /* BaseViewController.swift */,
+				7AF32CDE1EAE1E7800BA6080 /* GoogleService-Info.plist */,
+				7A54DC811EA6025A00350EED /* PageViewController.swift */,
+				7A54DC711EA5FFC800350EED /* Main.storyboard */,
+				7A430C1C1EC0CE5C00F39011 /* SubjectsCollectionViewCell.swift */,
+				7AE75E681EB70AC200E77563 /* SubjectsViewController.swift */,
+				7A2457CE1EB041CF0077F5DF /* LoginViewController.swift */,
+				7A54DC741EA5FFC800350EED /* Assets.xcassets */,
+				7A54DC761EA5FFC800350EED /* LaunchScreen.storyboard */,
+				7A54DC791EA5FFC800350EED /* Info.plist */,
+			);
+			path = "Infinte PageViewController";
+			sourceTree = "<group>";
+		};
+		C6C74781C58B599AA3B43225 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF02625A80F828258C941D65 /* Pods-Infinte PageViewController.debug.xcconfig */,
+				D064FE32A17E0A04B404D079 /* Pods-Infinte PageViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A54DC691EA5FFC800350EED /* Infinte PageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A54DC7C1EA5FFC800350EED /* Build configuration list for PBXNativeTarget "Infinte PageViewController" */;
+			buildPhases = (
+				3E0EA89C89F4BFDFB9755293 /* [CP] Check Pods Manifest.lock */,
+				7A54DC661EA5FFC800350EED /* Sources */,
+				7A54DC671EA5FFC800350EED /* Frameworks */,
+				7A54DC681EA5FFC800350EED /* Resources */,
+				968BCF90C55C863517BC6CFE /* [CP] Embed Pods Frameworks */,
+				B37CB5983EF83632CB5D816A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Infinte PageViewController";
+			productName = "Infinte PageViewController";
+			productReference = 7A54DC6A1EA5FFC800350EED /* Infinte PageViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A54DC621EA5FFC700350EED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = UnsureProgrammer;
+				TargetAttributes = {
+					7A54DC691EA5FFC800350EED = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = E988EH38XT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7A54DC651EA5FFC700350EED /* Build configuration list for PBXProject "Infinte PageViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A54DC611EA5FFC700350EED;
+			productRefGroup = 7A54DC6B1EA5FFC800350EED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A54DC691EA5FFC800350EED /* Infinte PageViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A54DC681EA5FFC800350EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A54DC781EA5FFC800350EED /* LaunchScreen.storyboard in Resources */,
+				7AF32CDF1EAE1E7800BA6080 /* GoogleService-Info.plist in Resources */,
+				7A54DC751EA5FFC800350EED /* Assets.xcassets in Resources */,
+				7A54DC731EA5FFC800350EED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E0EA89C89F4BFDFB9755293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		968BCF90C55C863517BC6CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infinte PageViewController/Pods-Infinte PageViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37CB5983EF83632CB5D816A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infinte PageViewController/Pods-Infinte PageViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A54DC661EA5FFC800350EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2457CF1EB041CF0077F5DF /* LoginViewController.swift in Sources */,
+				7AE75E691EB70AC200E77563 /* SubjectsViewController.swift in Sources */,
+				7A430C1D1EC0CE5C00F39011 /* SubjectsCollectionViewCell.swift in Sources */,
+				7A54DC6E1EA5FFC800350EED /* AppDelegate.swift in Sources */,
+				7A54DC801EA6001400350EED /* BaseViewController.swift in Sources */,
+				7A54DC821EA6025A00350EED /* PageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A54DC711EA5FFC800350EED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A54DC721EA5FFC800350EED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A54DC761EA5FFC800350EED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A54DC771EA5FFC800350EED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A54DC7A1EA5FFC800350EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A54DC7B1EA5FFC800350EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A54DC7D1EA5FFC800350EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF02625A80F828258C941D65 /* Pods-Infinte PageViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E988EH38XT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = "Infinte PageViewController/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unsureprogrammer.Infinte-PageViewController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A54DC7E1EA5FFC800350EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D064FE32A17E0A04B404D079 /* Pods-Infinte PageViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E988EH38XT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = "Infinte PageViewController/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unsureprogrammer.Infinte-PageViewController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A54DC651EA5FFC700350EED /* Build configuration list for PBXProject "Infinte PageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A54DC7A1EA5FFC800350EED /* Debug */,
+				7A54DC7B1EA5FFC800350EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A54DC7C1EA5FFC800350EED /* Build configuration list for PBXNativeTarget "Infinte PageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A54DC7D1EA5FFC800350EED /* Debug */,
+				7A54DC7E1EA5FFC800350EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A54DC621EA5FFC700350EED /* Project object */;
+}
