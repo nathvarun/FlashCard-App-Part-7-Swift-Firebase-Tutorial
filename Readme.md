@@ -6,7 +6,7 @@ Complete Project files for [FlashCard Learning App Youtube](https://www.youtube.
 Displays Subjects On the subjects screen.
 
 ## Tutorial Video 
-Updating Shortly!
+[FlashCard App Part-7](https://youtu.be/09taRWuwH4Y)
 
 ## Instructions 
 - The cocoapod dependencies are already listed in the pod file but must be installed.
