@@ -122,6 +122,15 @@ class SubjectsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func didTapDone(_ sender: Any) {
+        
+        let pageViewNavigationController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewNavigationController") as! UINavigationController
+        
+        let pageViewController = pageViewNavigationController.topViewController as! PageViewController
+        
+        self.present(pageViewNavigationController,animated:true,completion:nil)
+
+    }
 
 }
 
@@ -199,6 +208,118 @@ extension SubjectsViewController:UICollectionViewDataSource,UICollectionViewDele
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        let cell = collectionView.cellForItem(at: indexPath)! as! SubjectsCollectionViewCell
+        
+        
+        var mainCategory:String?
+        var subCategory:String?
+        var subjectId:String?
+        //        var subject = [String:[String:[String]]]()
+        
+        let mySubjectDetails = self.mySubjectCategories[indexPath.section]
+        //eg key = aviation
+        for(key,value) in mySubjectDetails{
+            
+            mainCategory = key
+            
+            //eg key = dgca
+            for(key,value) in  value{
+                
+                subCategory = key
+                subjectId = value[indexPath.row]["key"]
+                
+            }
+        }
+        
+        
+        let userSubjectsRef = self.rootRef.child("user_subjects").child(globalLoggedInUser!.uid).child(subjectId!)
+        
+
+            
+            if(cell.subjectImage.layer.borderColor == globalAppGreen)
+            {
+                cell.subjectImage.layer.borderColor = UIColor.black.cgColor
+                cell.subjectImage.layer.borderWidth = 0
+                
+                //            self.selectedSubjects = self.selectedSubjects.filter() {$0 != cell.subjectLabel.text!}
+                userSubjectsRef.setValue(NSNull())
+                
+                self.userSubjectIds = self.userSubjectIds.filter(){$0 != subjectId!}
+                //remove the subject id from the selected subjects
+                //            self.userSubjectsArray = self.selectedSubjectIds.filter(){$0 != subjectId!}
+                
+            }
+            else
+            {
+                let color = CABasicAnimation(keyPath: "borderColor")
+                
+                color.fromValue = UIColor.clear.cgColor
+                color.toValue = globalAppGreen
+                color.duration = 0.25
+                color.repeatCount = 1
+                cell.subjectImage.layer.borderWidth = 3.0
+                cell.subjectImage.layer.borderColor = globalAppGreen
+                cell.subjectImage.layer.add(color, forKey: "borderColor")
+                
+                //add the subjectId to the userSubjectIds array
+                self.userSubjectIds.append(subjectId!)
+                
+                //get the key
+                //let key = self.rootRef.child("subjects").child(globalLoggedInUser!.uid).key
+                
+                
+                
+                let childValues = ["name":cell.subjectName.text!.lowercased(),
+                                   "subCategory":subCategory!.lowercased(),
+                                   "mainCategory":mainCategory!.lowercased()]
+                
+                userSubjectsRef.updateChildValues(childValues)
+                
+                //            self.rootRef.child("user_subjects").child(user.uid!).child(mainCategory!.lowercased()).child(subCategory!.lowercased()).child(key).setValue(cell.subjectLabel.text!.lowercased()
+            }
+        
+    }
+
+    
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        //1
+        switch kind {
+        //2
+        case UICollectionElementKindSectionHeader:
+            //3
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: "SubjectsHeaderCollectionReusableView",for: indexPath) as! SubjectsHeaderCollectionReusableView
+            
+            
+            for(_,value) in self.mySubjectCategories[indexPath.section]
+            {
+                for(key,_) in value
+                {
+                    headerView.label.text = key.capitalized
+                    headerView.label.sizeToFit()
+                    headerView.headerImage.image = UIImage(named: key.capitalized)
+                }
+            }
+            
+            return headerView
+            
+        default:
+            //4
+            /** assert only works in debug configuration **/
+            assert(false, "Unexpected element kind")
+            
+            /** fatal error is needed when the app is live **/
+            fatalError("Unexpected element kind")
+            
+        }
+    }
+
     
     
 }

@@ -131,9 +131,38 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cH0-6P-fgW">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubjectsHeaderCollectionReusableView" id="cH0-6P-fgW" customClass="SubjectsHeaderCollectionReusableView" customModule="Infinte_PageViewController" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-Xn-cIk">
+                                            <rect key="frame" x="131" y="10" width="112" height="40"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I5I-X1-yld">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="3bD-n5-iFd"/>
+                                                        <constraint firstAttribute="height" constant="40" id="MAL-Q2-rvY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DGCA" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noo-pf-JaT">
+                                                    <rect key="frame" x="40" y="0.0" width="72" height="40"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                                    <color key="textColor" red="0.68235294120000001" green="0.87843137250000003" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="zhS-Xn-cIk" firstAttribute="centerY" secondItem="cH0-6P-fgW" secondAttribute="centerY" id="Ir9-7G-GvX"/>
+                                        <constraint firstItem="zhS-Xn-cIk" firstAttribute="centerX" secondItem="cH0-6P-fgW" secondAttribute="centerX" id="dX4-it-0Hb"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="headerImage" destination="I5I-X1-yld" id="zvU-iM-G7e"/>
+                                        <outlet property="label" destination="Noo-pf-JaT" id="Jbf-04-4Vv"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeF-1h-oEX">
@@ -145,6 +174,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.99625390768051147" green="1" blue="0.99637335538864136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapDone:" destination="nHL-ze-KDr" eventType="touchUpInside" id="eYg-rc-ZRv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -174,7 +206,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yNr-Xf-fyV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WBQ-Gf-X59" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PageViewNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="WBQ-Gf-X59" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="bbm-NU-spK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

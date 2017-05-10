@@ -6,8 +6,4 @@ target 'Infinte PageViewController' do
   use_frameworks!
 
   # Pods for Infinte PageViewController
-  pod 'SnapKit'
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Database'
 end

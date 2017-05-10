@@ -33,6 +33,7 @@ class LoginViewController: UIViewController,FBSDKLoginButtonDelegate{
     }
 
     
+    
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
         print("User logged into facebook")
