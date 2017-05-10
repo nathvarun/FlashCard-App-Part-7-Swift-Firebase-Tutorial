@@ -19,7 +19,6 @@
 		7A54DC801EA6001400350EED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54DC7F1EA6001400350EED /* BaseViewController.swift */; };
 		7A54DC821EA6025A00350EED /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54DC811EA6025A00350EED /* PageViewController.swift */; };
 		7AE75E691EB70AC200E77563 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE75E681EB70AC200E77563 /* SubjectsViewController.swift */; };
-		7AF32CDF1EAE1E7800BA6080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AF32CDE1EAE1E7800BA6080 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		7A54DC7F1EA6001400350EED /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7A54DC811EA6025A00350EED /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7AE75E681EB70AC200E77563 /* SubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
-		7AF32CDE1EAE1E7800BA6080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D064FE32A17E0A04B404D079 /* Pods-Infinte PageViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinte PageViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinte PageViewController/Pods-Infinte PageViewController.release.xcconfig"; sourceTree = "<group>"; };
 		FF02625A80F828258C941D65 /* Pods-Infinte PageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinte PageViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinte PageViewController/Pods-Infinte PageViewController.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 			children = (
 				7A54DC6D1EA5FFC800350EED /* AppDelegate.swift */,
 				7A54DC7F1EA6001400350EED /* BaseViewController.swift */,
-				7AF32CDE1EAE1E7800BA6080 /* GoogleService-Info.plist */,
 				7A54DC811EA6025A00350EED /* PageViewController.swift */,
 				7A54DC711EA5FFC800350EED /* Main.storyboard */,
 				7A430C1C1EC0CE5C00F39011 /* SubjectsCollectionViewCell.swift */,
@@ -175,7 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A54DC781EA5FFC800350EED /* LaunchScreen.storyboard in Resources */,
-				7AF32CDF1EAE1E7800BA6080 /* GoogleService-Info.plist in Resources */,
 				7A54DC751EA5FFC800350EED /* Assets.xcassets in Resources */,
 				7A54DC731EA5FFC800350EED /* Main.storyboard in Resources */,
 			);
